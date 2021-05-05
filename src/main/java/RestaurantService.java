@@ -31,8 +31,13 @@ public class RestaurantService {
     public List<Restaurant> getRestaurants() {
         return restaurants;
     }
+    //return total price of all orders selected
     public int getOrderPrice(List<Item> lstAllItems){
         int totalPrice=0;
+        for (Item i:lstAllItems
+             ) {
+            totalPrice+=i.getPrice();
+        }
         return totalPrice;
     }
 }

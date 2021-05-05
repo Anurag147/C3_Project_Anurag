@@ -73,6 +73,6 @@ class RestaurantServiceTest {
         Item second = new Item("Burger",60);
         lstAllItems.add(first);
         lstAllItems.add(second);
-        assertEquals(80,service.getOrderPrice(lstAllItems));
+        assertEquals(70,service.getOrderPrice(lstAllItems));
     }
 }
